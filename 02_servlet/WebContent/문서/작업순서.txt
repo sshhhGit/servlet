@@ -7,7 +7,8 @@ Enter password: 12345
 
 mysql> SHOW DATABASE;
 
-mysql> use mydb;
+create database mydb2;
+mysql> use mydb2;
 
 drop table member1;
 

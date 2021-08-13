@@ -6,7 +6,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-import oracle.net.aso.p;
+//import oracle.net.aso.p;
 
 import java.sql.*; 
 
@@ -20,7 +20,7 @@ public class JoinTest extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String DRIVER = "com.mysql.jdbc.Driver"; //MySql제공
-		String URL = "jdbc:mysql://localhost:3306/mydb";
+		String URL = "jdbc:mysql://localhost:3306/mydb2";
 		String USER = "root";
 		String PWD = "12345";
 		

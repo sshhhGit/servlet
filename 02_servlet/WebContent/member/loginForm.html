@@ -18,13 +18,31 @@ table, tr, td {
 border: 1px solid black;
 	
 }
-
-
 </style>
+<script type="text/javascript">
+function check() {
+	
+	var ff = document.loginForm;
+	if (ff.id.value=='') {
+		alert("ID를 입력하세요);
+		ff.id.focus();
+		return false;
+	}
+	
+	if (ff.pw.value=='') {
+		alert("암호를 입력하세요")
+		ff.pw.focus();
+		return false;
+	}
+	return true;
+	
+}
+
+</script>
 </head>
 <body>
 	<h2>로그인 폼</h2>
-	<form method="post" action="/02_servlet/LoginTest">
+	<form method="post" action="/02_servlet/LoginTest" onSubmit="return check()">
 		<table>
 			<tr>
 				<td>ID</td>
@@ -36,6 +54,8 @@ border: 1px solid black;
 			</tr>
 			<tr>
 				<td colspan="2" align="center">
+				<input type="submit" value="전송">&nbsp;
+				<input type="reset" value="다시입력">&nbsp;
 				</td>
 			</tr>
 		</table>

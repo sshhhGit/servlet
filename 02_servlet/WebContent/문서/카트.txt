@@ -1,0 +1,36 @@
+상품목록
+
+서블릿 Cart.java
+
+DB
+
+WebContent
+	imgs/a.jpg 냉장고
+	    /b.jpg 세탁기
+            /c,jpg 컴퓨터
+
+===================================================
+use mydb;
+
+drop table sangpum;
+
+create table sangpum(
+title varchar(50) not null,
+imgfile varchar(30) not null,
+imghtml varchar(30) not null,
+content varchar(4000) not null
+);
+
+insert
+
+insert into sangpum values('냉장고','a.jpg','a.html','전국무료설치/1등급, 2개구매시 5000원할인 쿠폰 바로받기 무이자 할부 최대 22개월'
+);
+
+insert into sangpum values('세탁기', 'b.jpg','b.html','14kg, 세탁전용, 스마트 진단, 에너지 소비 효율 2등급, 물 높이 조절 10단계'
+);
+
+insert into sangpum values('컴퓨터','c.jpg', 'c.html' ,'그램, core i5-7200U(2.5GHz), 39.63.cm(15.6인치), 1920*1080, 인텔, HD 620, 8GB, 256GB(SSD), 윈도우10'
+);
+
+
+select title, imgfile from sangpum;
